@@ -8,7 +8,7 @@ new g_pMap
 public plugin_init()
 {
 	register_plugin("Custom Mapname", PLUGIN_VERSION, "OciXCrom")
-	register_cvar("CRXCustomMapName", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
+	register_cvar("CRXCustomMapname", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
 	RegisterHookChain(RH_Cvar_DirectSet, "ReAPI_HC_Cvar_DirectSet")
 	g_pMap = register_cvar("sv_mapname", "")
 }
